@@ -137,6 +137,10 @@
 <span id="92">92</span>
 <span id="93">93</span>
 <span id="94">94</span>
+<span id="95">95</span>
+<span id="96">96</span>
+<span id="97">97</span>
+<span id="98">98</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! Rust bindings for [libffi](https://sourceware.org/libffi/).</span>
 <span class='doccomment'>//!</span>
@@ -153,11 +157,15 @@
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! # Usage</span>
 <span class='doccomment'>//!</span>
-<span class='doccomment'>//! It’s [on crates.io](https://crates.io/crates/libffi), so you can add</span>
+<span class='doccomment'>//! Building libffi will build lifbffi-sys, which will in turn build the</span>
+<span class='doccomment'>//! libffi C library [from github](https://github.com/libffi/libffi),</span>
+<span class='doccomment'>//! which requires that you have a working make, C compiler, automake,</span>
+<span class='doccomment'>//! autoconf, and texinfo first. It’s [on</span>
+<span class='doccomment'>//! crates.io](https://crates.io/crates/libffi), so you can add</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! ```toml</span>
 <span class='doccomment'>//! [dependencies]</span>
-<span class='doccomment'>//! libffi = &quot;0.5.2&quot;</span>
+<span class='doccomment'>//! libffi = &quot;0.6.0&quot;</span>
 <span class='doccomment'>//! ```</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! to your `Cargo.toml` and</span>

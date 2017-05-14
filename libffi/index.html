@@ -48,7 +48,7 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a class='srclink' href='../src/libffi/lib.rs.html#1-94' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../src/libffi/lib.rs.html#1-98' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Rust bindings for <a href="https://sourceware.org/libffi/">libffi</a>.</p>
 
 <p>The C libffi library provides two main facilities: assembling calls
@@ -63,10 +63,14 @@ less checking) is provided by the <a href="middle/index.html"><code>middle</code
 <a href="low/index.html"><code>low</code></a> layers.</p>
 
 <h1 id='usage' class='section-header'><a href='#usage'>Usage</a></h1>
-<p>It’s <a href="https://crates.io/crates/libffi">on crates.io</a>, so you can add</p>
+<p>Building libffi will build lifbffi-sys, which will in turn build the
+libffi C library <a href="https://github.com/libffi/libffi">from github</a>,
+which requires that you have a working make, C compiler, automake,
+autoconf, and texinfo first. It’s <a href="https://crates.io/crates/libffi">on
+crates.io</a>, so you can add</p>
 
 <pre><code class="language-toml">[dependencies]
-libffi = &quot;0.5.2&quot;
+libffi = &quot;0.6.0&quot;
 </code></pre>
 
 <p>to your <code>Cargo.toml</code> and</p>

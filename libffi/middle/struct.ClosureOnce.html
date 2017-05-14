@@ -48,12 +48,12 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a class='srclink' href='../../src/libffi/middle/mod.rs.html#342-347' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/libffi/middle/mod.rs.html#344-349' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ClosureOnce { /* fields omitted */ }</pre><div class='docblock'><p>A closure that owns needs-drop data.</p>
 
 <p>This allows the closure’s callback to take ownership of the data, in
 which case the userdata will be gone if called again.</p>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../libffi/middle/struct.ClosureOnce.html' title='libffi::middle::ClosureOnce'>ClosureOnce</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/mod.rs.html#357-411' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../libffi/middle/struct.ClosureOnce.html' title='libffi::middle::ClosureOnce'>ClosureOnce</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/mod.rs.html#359-413' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>&lt;U:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/any/trait.Any.html' title='core::any::Any'>Any</a>, R&gt;(cif: <a class='struct' href='../../libffi/middle/struct.Cif.html' title='libffi::middle::Cif'>Cif</a>, callback: <a class='type' href='../../libffi/middle/type.CallbackOnce.html' title='libffi::middle::CallbackOnce'>CallbackOnce</a>&lt;U, R&gt;, userdata: U) -&gt; Self</code></span></h4>
 <div class='docblock'><p>Creates a new closure with owned userdata.</p>
 
@@ -75,10 +75,10 @@ arguments when the closure is called</li>
 <p>The result needs to be transmuted to the correct type before
 it can be called. If the type is wrong then undefined behavior
 will result.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../libffi/middle/struct.ClosureOnce.html' title='libffi::middle::ClosureOnce'>ClosureOnce</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/mod.rs.html#341' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../libffi/middle/struct.ClosureOnce.html' title='libffi::middle::ClosureOnce'>ClosureOnce</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/mod.rs.html#343' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
 <div class='docblock'><p>Formats the value using the given formatter.</p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../../libffi/middle/struct.ClosureOnce.html' title='libffi::middle::ClosureOnce'>ClosureOnce</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/mod.rs.html#349-355' title='goto source code'>[src]</a></span></h3>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../../libffi/middle/struct.ClosureOnce.html' title='libffi::middle::ClosureOnce'>ClosureOnce</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/mod.rs.html#351-357' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.drop' class='method'><span id='drop.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></span></h4>
 <div class='docblock'><p>A method called when the value goes out of scope. <a href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop">Read more</a></p>
 </div></div></section>

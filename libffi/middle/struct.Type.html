@@ -69,8 +69,8 @@
 <span class='kw'>let</span> <span class='ident'>my_struct</span> <span class='op'>=</span> <span class='ident'>Type</span>::<span class='ident'>structure</span>(<span class='macro'>vec</span><span class='macro'>!</span>[
     <span class='ident'>Type</span>::<span class='ident'>u64</span>(),
     <span class='ident'>Type</span>::<span class='ident'>u16</span>(),
-].<span class='ident'>into_iter</span>());</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../libffi/middle/struct.Type.html' title='libffi::middle::Type'>Type</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/types.rs.html#225-422' title='goto source code'>[src]</a></span></h3>
+]);</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../libffi/middle/struct.Type.html' title='libffi::middle::Type'>Type</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/libffi/middle/types.rs.html#225-423' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.void' class='method'><span id='void.v' class='invisible'><code>fn <a href='#method.void' class='fnname'>void</a>() -&gt; Self</code></span></h4>
 <div class='docblock'><p>Returns the representation of the C <code>void</code> type.</p>
 
@@ -136,7 +136,7 @@ argument or struct member.</p>
 <div class='docblock'><p>Returns the C <code>_Complex long double</code> type.</p>
 
 <p>This item is enabled by <code>#[cfg(feature = &quot;complex&quot;)]</code>.</p>
-</div><h4 id='method.structure' class='method'><span id='structure.v' class='invisible'><code>fn <a href='#method.structure' class='fnname'>structure</a>&lt;I&gt;(fields: I) -&gt; Self <span class='where fmt-newline'>where I: <a class='trait' href='https://doc.rust-lang.org/nightly/core/iter/traits/trait.ExactSizeIterator.html' title='core::iter::traits::ExactSizeIterator'>ExactSizeIterator</a>&lt;Item=<a class='struct' href='../../libffi/middle/struct.Type.html' title='libffi::middle::Type'>Type</a>&gt;</span></code></span></h4>
+</div><h4 id='method.structure' class='method'><span id='structure.v' class='invisible'><code>fn <a href='#method.structure' class='fnname'>structure</a>&lt;I&gt;(fields: I) -&gt; Self <span class='where fmt-newline'>where I: <a class='trait' href='https://doc.rust-lang.org/nightly/core/iter/traits/trait.IntoIterator.html' title='core::iter::traits::IntoIterator'>IntoIterator</a>&lt;Item=<a class='struct' href='../../libffi/middle/struct.Type.html' title='libffi::middle::Type'>Type</a>&gt;, I::<a class='trait' href='https://doc.rust-lang.org/nightly/core/iter/traits/trait.IntoIterator.html' title='core::iter::traits::IntoIterator'>IntoIter</a>: <a class='trait' href='https://doc.rust-lang.org/nightly/core/iter/traits/trait.ExactSizeIterator.html' title='core::iter::traits::ExactSizeIterator'>ExactSizeIterator</a>&lt;Item=<a class='struct' href='../../libffi/middle/struct.Type.html' title='libffi::middle::Type'>Type</a>&gt;</span></code></span></h4>
 <div class='docblock'><p>Constructs a structure type whose fields have the given types.</p>
 </div><h4 id='method.as_raw_ptr' class='method'><span id='as_raw_ptr.v' class='invisible'><code>fn <a href='#method.as_raw_ptr' class='fnname'>as_raw_ptr</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='struct' href='../../libffi/low/struct.ffi_type.html' title='libffi::low::ffi_type'>ffi_type</a></code></span></h4>
 <div class='docblock'><p>Gets a raw pointer to the underlying
